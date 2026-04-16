@@ -1,0 +1,18 @@
+.project-title {
+    // margin: 5rem 0 0 0;
+    color: var(--text-color);
+    font-weight: bold;
+    border: var(--secondary-color) 1px solid;
+    padding: 1rem;
+}
+
+.project-photos {
+    height: 30rem;
+}
+
+.project-detail-label {
+    text-align: right;
+    font-weight: bold;
+
+    border: var(--secondary-color) 1px solid;
+}

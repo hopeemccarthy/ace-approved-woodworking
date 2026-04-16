@@ -1,0 +1,46 @@
+<a [routerLink]="['/']" class="header-link">
+    <span class="header-logo">
+        <span class="header-text">
+            Ace Approved Woodworking
+        </span> 
+        <!-- <img class="brand-logo" src="/public/aceLogo.svg" alt="logo" aria-hidden="true" /> -->
+    </span>
+</a>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid navigation-menu">
+        <!-- <a class="navbar-brand"  [routerLink]="['/']">
+        <img src="/public/aceLogo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+             Ace Approved Woodworking
+        </a> -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+        @for (route of routesList; track $index) {
+            <li class='nav-item navigation-option' [ngClass]="{'dropdown': route.submenu && route.submenu.length}">
+
+                @if (route.submenu && route.submenu.length) {
+                    <a 
+                        class="nav-link" 
+                        [ngClass]="{'dropdown-toggle': route.submenu && route.submenu.length}" 
+                        role="button" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        {{route.title}}
+                    </a>
+                    <ul class="dropdown-menu">
+                        @for (subroute of route.submenu || []; track $index) {
+                            <li><a class="dropdown-item" [routerLink]="['/'+ subroute.route]">{{subroute.title}}</a></li>
+                        }
+                    </ul>
+                } @else {
+                    <a 
+                        class="nav-link" 
+                        [routerLink]="['/'+ route.route]"
+                        role="button" >
+                        {{route.title}}
+                    </a>
+                }
+            </li>
+        }
+      </ul>
+    <!-- </div> -->
+  </div>
+</nav>

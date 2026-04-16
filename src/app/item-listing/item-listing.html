@@ -1,0 +1,19 @@
+    <!-- <section class="listing">
+      <img
+        class="listing-photo"
+        [src]="itemListing().photo"
+        alt="Exterior photo of {{ itemListing().name }}"
+        crossorigin
+      />
+      <h2 class="listing-heading">{{ itemListing().name }}</h2>
+      <p class="listing-location">{{ itemListing().description }}</p>
+      <!-- <a [routerLink]="['/details', itemListing().id]">Learn More</a> -->
+    <!-- </section> --> 
+
+<section class="card listing" style="width: 18rem;">
+    <img [src]="itemListing().photo" class="card-img-top listing-photo" alt="Photo of {{ itemListing().name }}">
+    <span class="card-body">
+        <h6 class="card-title">{{ itemListing().name }}</h6>
+        <p class="card-text">{{ itemListing().description }}</p>
+    </span>
+</section>

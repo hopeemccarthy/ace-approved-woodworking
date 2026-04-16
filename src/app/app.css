@@ -1,0 +1,58 @@
+
+:host {
+  --content-padding: 10px;
+}
+
+header {
+  display: block;
+  /* height: 5rem; */
+  background-color: var(--text-color);
+}
+.content {
+  padding: var(--content-padding);
+}
+.brand-logo {
+  fill: var(--primary-color);
+    /* filter: invert(24%) sepia(68%) saturate(7484%) hue-rotate(355deg) brightness(92%) contrast(121%); */
+  height: 9vh;
+  width: 9vh;
+  float: left;
+
+}
+
+.header-text {
+  color: var(--text-color);
+  padding: 10px 20px 0 20px;
+}
+
+.header-text div {
+    height: 5vh;
+}
+
+a.header-link {
+  width: 25rem;
+  height: 10vh;
+  line-height: 10vh;
+  display: block;
+  
+  color: var(--secondary-color);
+  background-color: var(--shadow-color);
+  
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.instagram-link {
+  float: right;
+  color:  var(--secondary-color);
+  text-decoration: none;
+  line-height: 5rem;
+  margin: 0 0 -1rem 0;
+}
+
+.instagram-link a {
+  color:  var(--text-color);
+  text-decoration: none;
+}
+

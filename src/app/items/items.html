@@ -1,0 +1,14 @@
+<section>
+    <!-- <form>
+    <input type="text" placeholder="Filter by city" #filter />
+    <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+    </form> -->
+    <!-- TODO - filter buttons?  -->
+</section>
+<section class="results">
+    @for (item of itemListings; track $index) {
+        <span class="item-listing">
+            <app-item-listing [itemListing]="item" />
+        </span>
+    }
+</section>

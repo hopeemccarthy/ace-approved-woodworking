@@ -1,0 +1,62 @@
+.navigation-menu {
+    width: 100%;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+
+    text-align: center;
+}
+
+.navigation-option {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+
+    // font-weight: bold;
+}
+
+.nav-link {
+    color: var(--beige);
+}
+
+.navbar {
+    padding: 0;
+}
+
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+
+.brand-logo {
+  fill: var(--primary-color);
+    /* filter: invert(24%) sepia(68%) saturate(7484%) hue-rotate(355deg) brightness(92%) contrast(121%); */
+  height: 10vh;
+  width: 10vh;
+  float: left;
+
+}
+
+.header-text {
+  color: var(--shadow-color);
+  padding: 10px 20px 10px 20px;
+
+  border: 2px solid var(--secondary-color);
+
+}
+
+.header-text div {
+    height: 5vh;
+}
+
+a.header-link {
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+  display: block;
+   
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+
+}

@@ -1,0 +1,2 @@
+root: C:\Users\hope3\AngularApp\nvm
+path: C:\Users\hope3\AngularApp\nodejs
