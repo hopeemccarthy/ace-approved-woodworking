@@ -2,7 +2,7 @@
     // margin: 5rem 0 0 0;
     color: var(--text-color);
     font-weight: bold;
-    border: var(--secondary-color) 1px solid;
+    border: var(--secondary-color) 2px solid;
     padding: 1rem;
 }
 
@@ -14,5 +14,15 @@
     text-align: right;
     font-weight: bold;
 
-    border: var(--secondary-color) 1px solid;
+    border: var(--secondary-color) 2px solid;
+
+    height: fit-content;
+}
+
+.badge {
+    // background-color: var(--secondary-color);
+    background-color: var(--secondary-accent);
+    color: var(--text-color);
+    font-size: inherit;
+    font-weight: normal;
 }
