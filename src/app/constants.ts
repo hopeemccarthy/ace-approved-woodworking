@@ -9,12 +9,6 @@ export const Category: {[key: string] : string} = {
     all: 'All'
 };
 
-export const Tools = {
-    dewaltDrill: 'Dewalt Drill',
-    dewaltSander: 'Dewalt Sander',
-    circularSaw: 'Circular Saw',
-    miterSaw: 'Miter Saw',
-};
 
 export const Supplies = {
     
@@ -65,7 +59,7 @@ export const NavigationMenu: MenuItem[] = [
             {
                 title: Category['all'],
                 route: 'items/',
-            },          
+            },         
         ]
     },
     {
@@ -75,5 +69,9 @@ export const NavigationMenu: MenuItem[] = [
             title: project.name,
             route: `projects/${project.id}`
         }))
+    },
+    {
+        title: 'Contact',
+        route: 'contact/',
     }
 ]

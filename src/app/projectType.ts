@@ -8,6 +8,6 @@ export interface ProjectType {
   difficulty?: 'Easy' | 'Medium' | 'Hard';
   time?: string;
   tools?: string[];
-  supplies?: [];
+  supplies?: string[];
   cost?: number;
 }

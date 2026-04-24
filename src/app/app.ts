@@ -1,13 +1,12 @@
 import {Component} from '@angular/core';
-import {Home} from './home/home.js';
-import {RouterLink, RouterOutlet} from '@angular/router';
+import { RouterOutlet} from '@angular/router';
 import { Navigation } from './navigation/navigation.js';
 
 @Component({
   selector: 'app-root',
-  imports: [Home, RouterOutlet, RouterLink, Navigation],
+  imports: [ RouterOutlet,  Navigation],
   templateUrl: './app.html',
-  styleUrls: ['./app.css', 'housing-location/housing-location.css', 'home/home.css'],
+  styleUrls: ['./app.css',],
 })
 export class App {
   title = 'default';

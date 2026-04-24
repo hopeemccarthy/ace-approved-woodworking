@@ -1,10 +1,9 @@
 import { Component, input } from '@angular/core';
 import { ItemListingInfo } from '../ItemListing.js';
-import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-item-listing',
-  imports: [RouterLink, RouterOutlet],
+  imports: [],
   templateUrl: './item-listing.html',
   styleUrl: './item-listing.scss',
 })

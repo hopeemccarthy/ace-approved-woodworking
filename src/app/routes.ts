@@ -4,6 +4,7 @@ import { About } from './about/about.js';
 import { Items } from './items/items.js';
 import { Homepage } from './homepage/homepage.js';
 import { ProjectContainer } from './project-container/project-container.js';
+import { Contact } from './contact/contact.js';
 const routeConfig: Routes = [
   {
     path: '',
@@ -30,10 +31,15 @@ const routeConfig: Routes = [
     component: Items,
     title: 'Items',
   },
-    {
+  {
     path: 'projects/:project',
     component: ProjectContainer,
     title: 'Projects',
   },
+  {
+    path: 'contact',
+    component: Contact,
+    title: 'Contact'
+  }
 ];
 export default routeConfig;
