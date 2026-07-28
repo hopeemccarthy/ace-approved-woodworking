@@ -40,7 +40,7 @@
   color: var(--shadow-color);
   padding: 10px 20px 10px 20px;
 
-  border: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
 
 }
 
@@ -59,4 +59,8 @@ a.header-link {
   font-weight: bold;
   text-align: center;
 
+}
+
+.hidden {
+  display: none;
 }

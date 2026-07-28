@@ -1,1 +1,27 @@
-<p>contact works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+    <span class="row mt-2">
+        <label for="name" class="form-label">Name: </label>
+        <input id="name" type="text" class="form-control" formControlName="name" />
+    </span>
+
+    <span class="row mt-2">
+        <label for="email" class="form-label">Email: </label>
+        <input id="email" type="text" class="form-control" formControlName="email" />
+    </span>
+
+    <span class="row mt-2">
+        <label for="itemId" class="form-label">Item: </label>
+        <select id="itemId" type="text" class="form-control" options={itemOptions} formControlName="itemId">
+             @for (item of itemOptions; track $index) {
+                <option [value]="item.value" >{{ item.label }}</option>
+            }
+        </select>
+    </span>
+
+    <span class="row mt-2">
+        <label for="message" class="form-label">Message: </label>
+        <input id="message" type="text" class="form-control" formControlName="message" />
+    </span>
+
+    <button class="btn btn-primary m-2 text-center" type="submit">Submit</button>
+</form>

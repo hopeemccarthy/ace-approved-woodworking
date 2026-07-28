@@ -1,0 +1,19 @@
+.form-label {
+    text-align: right;
+    color: var(--text-color);
+    width: 25%;
+}
+
+.form-control {
+    width: 33%;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    border-radius: unset; 
+}
+
+.form {
+    width: 100%;
+    text-align: center;
+}

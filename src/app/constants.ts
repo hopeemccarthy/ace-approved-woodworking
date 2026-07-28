@@ -21,6 +21,7 @@ type MenuItem = {
         title: string;
         route: string;
     }[];
+    hidden?: boolean;
 }
 
 export const NavigationMenu: MenuItem[] = [
@@ -28,7 +29,7 @@ export const NavigationMenu: MenuItem[] = [
         title: 'Home',
         route: '',
     },
-        {
+    {
         title: 'About',
         route: 'about/',
     },
@@ -73,5 +74,6 @@ export const NavigationMenu: MenuItem[] = [
     {
         title: 'Contact',
         route: 'contact/',
+        hidden: true
     }
 ]
